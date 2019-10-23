@@ -1,0 +1,12 @@
+$(document).ready(function(){
+    $("#btnConsulta").click(function(){
+        $.ajax({
+            url:"consulta.php",
+            type:"POST",
+            dataType:"json",
+            success:function(data){
+                console.log(data);
+            }
+        })
+    })
+ });
