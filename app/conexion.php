@@ -5,7 +5,7 @@ class Conexion{
         define('servidor', 'localhost');
         define('nombre_db', 'cordoba_app');
         define('usuario', 'cordoba_app');
-        define('pass_user', 'adK0258/8520');
+        define('pass_user', '**********');
         $opciones = array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8');
         try{
             $conexion = new PDO("mysql:host=".servidor."; dbname=".nombre_db, usuario, pass_user, $opciones);
